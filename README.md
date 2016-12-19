@@ -10,6 +10,10 @@
 
 Developing software involves much more than simply programming languages and APIs.  Or more accurately, the process of effectively developing software requires an understanding of more than just "coding".  In this module we will explore four topics that are fundamental to any successful development project.  These topics are: Application Architecture, Software Development Lifecycle, Application Operations, and OpenSource Licenses.  
 
+### Presentation Slides
+
+A slide show version of this presentation is available at this link: [General Development Concepts Slides](https://rawgit.com/hpreston/mod_general_development_concepts/master/output/index.html#/)
+
 [item]: # (slide)
 ## Main Topics
 
