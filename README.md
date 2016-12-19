@@ -12,7 +12,7 @@ Developing software involves much more than simply programming languages and API
 
 ### Presentation Slides
 
-A slide show version of this presentation is available at this link: [General Development Concepts Slides](https://rawgit.com/hpreston/mod_general_development_concepts/master/output/index.html#/)
+A slide show version of this presentation is available at this link: [General Development Concepts Slides](https://rawgit.com/imapex-training/mod_general_development_concepts/master/output/index.html#/)
 
 [item]: # (slide)
 ## Main Topics
