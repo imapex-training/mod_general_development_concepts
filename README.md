@@ -35,7 +35,7 @@ A slide show version of this presentation is available at this link: [General De
 
 **Architecture** - *the complex or carefully designed structure of something*
 
-Software architecture is the structure of an information system consisting of entities their properties, and the relationships among them. There are many ways an application can be architected, and the leading architecture of the time changes.  
+Software architecture is the structure of an information system consisting of entities, their properties, and the relationships among them. There are many ways an application can be architected, and the leading architecture of the time changes.  
 
 Till recently, the leading software architecture was commonly referred to as *Client-Server* and is still quite popular and used in many active development projects.  With the advent of "cloud" and the explosion of technology and applications throughout our personal and professional worlds, a new architecture called *Micro-Service* has arisen and become quite popular.  
 
@@ -55,7 +55,7 @@ Secondly is the Application Layer which would be the "server" in client/server. 
 
 Lastly is the Data Layer.  With client/server applications you will typically find a single Relational Database (common options would be Microsoft SQL Server, Oracle, or MySQL) that stores all the data processed and leveraged by clients of the application.  
 
-In some applications you will find the application and data layers installed on a single server instance, or they may be seperated onto different servers and communicate over the network.  
+In some applications you will find the application and data layers installed on a single server instance, or they may be separated onto different servers and communicate over the network.  
 
 There are some key reasons this Architecture worked so well for so long.  
 
@@ -71,21 +71,21 @@ There are some key reasons this Architecture worked so well for so long.
 
 [item]: # (/slide)
 
-Today, most modern applications (also commonly called Cloud Native, or Cloud Born) are designed using a Micro-service Architecture.  It is easiest to understand micro-service architecture as a comparison to the commonly understood Client-Server.  
+Today, most modern applications (also commonly called Cloud Native, or Cloud Born) are designed using a Micro-service Architecture.  It is easier to understand micro-service architecture as a comparison to the commonly understood Client-Server.  
 
-Rather than have a single client providing the presentation layer for users, micro-service applications are designed with the understanding that the method users will interact with the application will be varied and change over time.  Forcing a user to install software onto their computer or use a web page from a computer today is a way to nearly gaurantee your applciation to fail today.  Users are demanding Mobile-First options across a wide variety of device types.  Wearable technology like smartwatches are also becoming popular and mastering this interface will be important for developers.  And then are the even more bleeding edge interfaces like voice and virtual reality.  Micro-service applciations are designed to make it easy to launch new interfaces for users quickly and easily.  
+Rather than have a single client providing the presentation layer for users, micro-service applications are designed with the understanding that the method users will interact with the application will be varied and change over time.  Forcing a user to install software onto their computer or use a web page from a computer today is a way to nearly guarantee your application to fail today.  Users are demanding Mobile-First options across a wide variety of device types.  Wearable technology like smartwatches are also becoming popular and mastering this interface will be important for developers.  And then are the even more bleeding edge interfaces like voice and virtual reality.  Micro-service applciations are designed to make it easy to launch new interfaces for users quickly and easily.  
 
 In a micro-service application, the business logic elements are deconstructed into small, self-contained elements that can be developed, deployed and managed independent of each other.  This aspect of the architecture is where the term *micro-service* comes from.  Each micro-service provides capabilities through a consistent and well documented API (mostly commonly today REST) to other micro-services or directly to client applications.  Developers are still striving for simplicity, and because of how quickly the application requirements change, this architecture provides simplicity by allowing each element of the application to evolve independent of each other.  
 
 But this architecture comes with a price.  Micro-service architecture offers new challenges that Client-Server lacks.  Examples include: 
 
-* Loosely couple components and development teams require extra effort be made related to API development and documentation 
+* Loosely coupled components and development teams require extra effort be made related to API development and documentation 
 * The underlying network is even more important as a single request from a user could generate hundreds of transactions 
 * With each service providing an exposed interface and attack vector, security must be considered even more 
 * Tracking addresses and identities for services in a scalable fashion 
 * Operational challenges of a quickly changing, highly distrubted application pressure traditional models
 
-And finally, the data leveraged in a modern application is very different from the single relational database of a traditional application.  Big Data is throughout these applicaitons, and a single application may pull in data from a dozen or more differnet data sources, some of which may not even be owned or controlled by the application owner themselves.  
+And finally, the data leveraged in a modern application is very different from the single relational database of a traditional application.  Big Data is throughout these applications, and a single application may pull in data from a dozen or more different data sources, some of which may not even be owned or controlled by the application owners themselves.  
 
 [item]: # (slide)
 ## The 12 Factor Application
@@ -100,7 +100,7 @@ Full details at [12Factor.net](http://12factor.net)
 
 [item]: # (/slide)
 
-The 12 Factor Application is a methodology proposed in the early 2010s by core members of the Heroku team.  It is a well circulated and read proposal that focuses on "Cloud Native" application design concepts, however it is not perfect or univerally accepted.  Most will agree that it provides an ideal to strive towards, and a _violation_ of a factor should be done consciously and with reason.  
+The 12 Factor Application is a methodology proposed in the early 2010s by core members of the Heroku team.  It is a well circulated and read proposal that focuses on "Cloud Native" application design concepts, however it is not perfect or universally accepted.  Most will agree that it provides an ideal to strive towards, and a _violation_ of a factor should be done consciously and with reason.  
 
 It is not the only _manifesto_ on Cloud Native development, but it is worth having exposure and understanding of.  
 
@@ -159,7 +159,7 @@ Run admin/management tasks as one-off processes
 
 [item]: # (/slide)
 
-The 12 Factor Application describes a goal of a **stateless application**.  The refers to the goal that applications (and their components) should be able to come and go without any overall impact to the user or data.  This is core to the ablity to be fully "cloud native" and drive towards fully automated operations and portablity.  
+The 12 Factor Application describes a goal of a **stateless application**.  The refers to the goal that applications (and their components) should be able to come and go without any overall impact to the user or data.  This is core to the ability to be fully "cloud native" and drive towards fully automated operations and portability.  
 
 This is a great target goal, and for many applications, or microservices within an application, it is useful and practical.  But as an overall strategy it has some significant problems that are important to be aware of.  
 
@@ -171,7 +171,7 @@ This is a great target goal, and for many applications, or microservices within 
 
 [item]: # (/slide)
 
-Nearly every application of significance has a need to gather, manipulate, store, and report on data.  At it's core, the 12 Factor principals do not accomidate for how to deal with data. 
+Nearly every application of significance has a need to gather, manipulate, store, and report on data.  At it's core, the 12 Factor principals do not accommodate for how to deal with data. 
 
 
 [item]: # (slide)
@@ -276,7 +276,7 @@ Time is still linear in an Agile project, but the way the time is used differs g
 
 Traditional IT Operations are organized around different teams focusing on one element of the overall goal.  Business leaders determine what is needed, Enterprise Architects take the goals from the leaders and design a solution.  Developers build the products.  QA engineers test to make sure it operates as designed.  And lastly the Operations teams implement and maintain the solution.  
 
-This orgainziation structure and culture has lead to several very funny memes, but they tend to focus on the truth of the divided nature of IT delivery, and the challenges that it causes in accountability and success.
+This organization structure and culture has lead to several very funny memes, but they tend to focus on the truth of the divided nature of IT delivery, and the challenges that it causes in accountability and success.
 
 [item]: # (slide)
 
@@ -303,7 +303,8 @@ The Guiding principals of DevOps include:
 ![](images/pheonix-project.jpg)
 
 > “[DevOps is] a set of cultural norms and technical practices that enable this fast flow of work from dev through test through operations while preserving world class reliability” 
-> ~ Gene Kim - author of “The Phoenix Project”
+> ~ Gene Kim - author of “The Phoenix Project”
+
 [item]: # (/slide)
 
 DevOps is often talked about in the nature of the tools and techniques that are implemented as part of a pipeline, but DevOps is much more about the culture of an organization than about whether they are leveraging Jenkins.  
@@ -479,7 +480,7 @@ Licenses will typically address the above characteristics. And their treatment o
 
 [item]: # (slide)
 
-### Limiations
+### Limitations
 ***Protections and other footnotes***
 
 * **Liability**
@@ -536,9 +537,9 @@ A permissive license whose main conditions require preservation of copyright and
 
 [item]: # (/slide)
 
-OpenSource has always been popular, but its popularity is raising at a very fast level.  We are seeing large enterprises, across verticles, embracing OpenSource Software like never before.  And this is in some very critical areas where traditionally they would have selected a more traditional commercial vendor.  Even commercial software vendors, traditionally very anti-OpenSource, are starting to embrace OpenSource in a big way.  This could be as a user, contributor, or initiator of projects.  
+OpenSource has always been popular, but its popularity is raising at a very fast level.  We are seeing large enterprises, across verticals, embracing OpenSource Software like never before.  And this is in some very critical areas where traditionally they would have selected a more traditional commercial vendor.  Even commercial software vendors, traditionally very anti-OpenSource, are starting to embrace OpenSource in a big way.  This could be as a user, contributor, or initiator of projects.  
 
-Not all OpenSource projects and licenses are the same though, and as you jump into this world as an individual, you need to be able to differentiate between the different licenses that you'll run into so you can make apprporiate decisions about which projects to use and contribute to.  Also, deciding on an appropriate license for your own projects is an important decision that can have significant consequenses.  
+Not all OpenSource projects and licenses are the same though, and as you jump into this world as an individual, you need to be able to differentiate between the different licenses that you'll run into so you can make appropriate decisions about which projects to use and contribute to.  Also, deciding on an appropriate license for your own projects is an important decision that can have significant consequences.  
 
 
 [item]: # (slide)
